@@ -1,0 +1,42 @@
+CURSO DE NODE JS
+Introdución
+Instalaciones necesarias
+ Navegador Chrome 
+ Post Man: Herramienta para probar servicios REST
+ Visual Studio Code 
+ Extensiones recomendadas
+   TypeScript Importer
+   HTML, CSS, SUPPORT
+   JAVASCRIPT ES6
+   JS-CSS-HTML Formatter
+   GIT
+Videos
+Introducción
+Preguntas comunes
+que es node? Javascript en el servidor
+Lenguaje de backend
+Acceso al sistema de archivos del equipo
+Informacion del Sistema operativo
+Procesos en el equipo
+Trabaja con V8 es por eso que es rápido
+
+¿Qué puedo hacer con node?
+ Uso de sockets para una comunicación real Cliente-Servidor
+ Manejo de archivos en FileSystem, cargas simultáneas
+ Servidores locales y remotos con información en tiempo real
+ Conexión a base de datos
+ Creacion de Servicios REST en segundos : node es muy popular especialmente la libreria express para crear API o servicios que pueden ser consumidos por una app movil, escritorio u otro servidor a nuestro servidor, desde cualquier parte del mundo.
+
+¿Por qué node es tan popular?
+Las entradas y salidas no realizan bloqueos del servidor
+Es sumamente rápido y fácil de manejar
+Mas de 470mil paquetes disponibles (el ecosistema con más librerias en el mundo)
+Chat
+Si ya sabemos javascript ya sabemos gran parte de NODE
+NODE es RUNTIME de JS construido sobre el motor V8 de Google Chrome, utiliza una CONDUCCION por EVENTOS, UN MODELO de ENTRADA/SALIDA que no se bloquean lo que hacen muy eficiente.
+
+¿Qué es BLOCKING/ NOT BLOCKING? 
+-Ver video
+ 
+
+
