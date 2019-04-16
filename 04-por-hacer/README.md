@@ -1,3 +1,5 @@
 ## Aplicacion de comandos
 
-Este es el ejercicio del curso
+Curso de Node
+
+```npm install``` 
