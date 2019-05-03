@@ -9,19 +9,66 @@ const guardaDB = () => {
     });
 }
 
+const cargarDB = () => {
+    try {
+        listadoPorHacer = require('../db/data.json')        
+    } catch (error) {
+        listadoPorHacer = [];
+    }
+}
+   
 
 const crear = (descripcion) => {
+    cargarDB();
     let porHacer = {
         descripcion,
         completado: false
     };
-
     listadoPorHacer.push(porHacer);
+
     guardaDB();
+
     return porHacer;
 }
 
+const getListado = () => {
+    cargarDB();
+    return listadoPorHacer;
+}
+// Actualizar estado de tareas
+const actualizar = (descripcion, completado = true) => {
+    cargarDB();
+
+    let index = listadoPorHacer.findIndex(tarea => {
+        return tarea.descripcion === descripcion;        
+    })
+
+    if ( index >= 0 ) {
+        listadoPorHacer[index].completado = completado;
+        guardaDB();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+const borrar = (descripcion) => {
+    cargarDB();
+
+    let nuevoListado = listadoPorHacer.filter( tarea => tarea.descripcion !== descripcion );   
+    
+    if ( listadoPorHacer.length === nuevoListado.length) {
+        return false
+    } else {
+        listadoPorHacer = nuevoListado
+        guardaDB();
+        return true;
+    } 
+}
 module.exports = {
     crear,
-    guardaDB
+    getListado,
+    actualizar,
+    borrar
 }
