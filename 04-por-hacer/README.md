@@ -1,5 +1,4 @@
 ## Aplicacion de comandos
 
-Curso de Node
-
+Se deben instalar los paquetes de node
 ```npm install``` 
